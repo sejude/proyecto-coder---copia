@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    background-color: #4C3A51;
+    margin: auto;
+
+
+}
+
+
+header,
+.main {
+    width: 90%;
+    margin: 20px auto;
+
+}
+
+.ropamujeres {
+    display: flex;
+    justify-content: center;
+}
+
+.main .ropa {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+
+.main {
+
+    grid-area: main;
+}
+
+
+
+header nav {
+    background-color: #E7AB79;
+    overflow: hidden;
+    padding: 20px;
+    text-decoration: none;
+
+}
+
+ul {
+    list-style: none;
+    font-size: 0;
+}
+
+li {
+    display: inline-block;
+    width: 25%;
+    position: relative;
+    font-size: 14px;
+}
+
+ul ul {
+    position: absolute;
+    display: none;
+
+}
+
+ul ul li {
+    display: block;
+}
+
+ul li:hover ul {
+    display: block;
+
+}
+
+.div {
+    display: flex;
+  
+    align-items: baseline;
+    justify-content: space-between;
+    margin: 5px;
+ 
+}
+
+.titulo {
+    position: relative;
+    left: 90px;
+    top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: xx-large;
+    color: chocolate;
+}
+
+.contenedor .lista {
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+.link {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.estilobtn {
+    border-radius: 3px;
+    padding: 10px 20px;
+    display: inline-block;
+    text-decoration: none;
+    background-color: coral;
+}
+
+.busqueda{
+
+    visibility: visible;
+}
+
+fieldset {
+
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 30px;
+    width: 400px;
+    border-radius: 4px;
+    background-color: crimson;
+
+}
+
+
+
+.espacios {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: column;
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border-bottom: 16px;
+    margin-bottom: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    border: 1px solid black;
+}
+
+.info {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    background-color: crimson;
+    border-radius: 4px;
+    border-color: white;
+    border: 1px solid white;
+    color: black;
+}
+
+.boton {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    border: none;
+    padding: 12px;
+    color: black;
+    margin: 16px 0;
+    font-size: 16px;
+
+}
+
+
+.footer .pie {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #E7AB79;
+
+}
+
+footer {
+   
+    grid-area: footer;
+
+}
+
+
+
+.bodyGrid {
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "main main main"
+    "footer footer footer"    
+    ;
+
+    overflow-x: hidden;
+}
+
+.header {
+    grid-area: header;
+}
+
+@media (min-width:300px) {
+    .bodyGrid {
+        grid-template-areas: 
+        "header header"
+        "main main"
+        "footer footer"
+        ;
+    }
+
+    .busqueda{
+        display: none;
+    }
+
+    .footer{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-end;
+    }
+
+    .btn{
+        display: flex;
+        justify-content: column;
+        align-items: flex-end;
+    }
+}
